@@ -14,43 +14,41 @@
 | Caio Henrique de Andrade Farias | Ciência da Computação | Programação de Software Básico em C          |
 | Vinicius Amaral Ferraz        | Ciência da Computação | Programação de Software Básico em C          |
 | Gabriel Bonaretti da Silva    | Ciência da Computação | Programação de Software Básico em C          |
-| <Integrante 4>                | <Curso>                | <Disciplina>                                 |
-| <Integrante 5>                | <Curso>                | <Disciplina>                                 |
 
 - **Professor Orientador**: Kesede Rodrigues Julio
 
 ## 📖 Introdução
 
-Este projeto busca solucionar o problema de variações inadequadas de temperatura em adegas. Utilizamos sensores de alta precisão integrados a uma plataforma web intuitiva para monitoramento e análise preditiva, otimizando o controle de qualidade e a manutenção dos sistemas de refrigeração.
+A variação inadequada da temperatura em estoques de produtos sensíveis ao calor representa um desafio significativo para diversas indústrias, impactando diretamente a qualidade e o valor dos itens armazenados. Este projeto propõe a implementação de um sistema inteligente de monitoramento de temperatura com iot, baseado em sensores de alta precisão e uma plataforma web intuitiva, para otimizar o controle e a preservação da qualidade dos produtos. Além disso, o sistema permitirá a implementação de estratégias de manutenção preventiva e preditiva, otimizando o funcionamento dos equipamentos de refrigeração e prolongando sua vida útil.
 
 ## 🎯 Objetivo
 
-Desenvolver um sistema que:
-- Monitore temperaturas em tempo real.
-- Antecipe falhas via manutenção preditiva.
-- Otimize a eficiência operacional dos equipamentos de refrigeração.
+O objetivo central deste projeto transcende o simples monitoramento de temperatura. Busca-se implementar um sistema que, através da análise de dados precisos e em tempo real, capacite os usuários a adotarem uma postura proativa na manutenção de seus equipamentos de refrigeração. Acreditamos que a verdadeira inovação reside na capacidade de antecipar problemas, não apenas de reagir a eles.
+
+A manutenção preditiva, nesse contexto, assume um papel de destaque. Ao monitorar continuamente as tendências de temperatura e identificar padrões sutis, o sistema será capaz de prever possíveis falhas nos equipamentos de refrigeração antes que elas ocorram. Isso permite que os gestores programem intervenções de manutenção de forma otimizada, evitando paradas não planejadas e minimizando o risco de perdas de produtos.
+
+Paralelamente, o sistema também facilitará a implementação de estratégias de manutenção preventiva. Através da análise de dados históricos e da identificação de padrões de desgaste, será possível otimizar os cronogramas de manutenção preventiva, garantindo que os equipamentos operem em sua máxima eficiência e prolongando sua vida útil.
+
+Em suma, o objetivo final é fornecer uma solução que não apenas monitore a temperatura, mas que também se torne uma ferramenta poderosa para a otimização da manutenção, redução de custos e garantia da qualidade dos produtos.
+
 
 ## 🧱 Escopo
 
-- **Inclui**:
-  - Sensores de temperatura de alta precisão.
-  - Sistema embarcado para coleta e envio de dados.
-  - Plataforma web com visualização em tempo real.
-  - Geração de relatórios e alertas.
+Desenvolveremos um sistema de monitoramento de temperatura completo, desde a coleta precisa de dados até a visualização gráfica e análise preditiva. Para isso, implementaremos uma rede de sensores de alta precisão, estrategicamente posicionados no ambiente de armazenamento, e um sistema embarcado para coleta, processamento e transmissão confiável desses dados para um banco de dados centralizado. A precisão e confiabilidade dos dados serão garantidas por meio de calibração e validação rigorosas dos sensores.
 
-- **Exclui**:
-  - Controle automático de temperatura.
-  - Aplicativo móvel.
-  - Monitoramento de outros parâmetros ambientais.
+Em seguida, criaremos uma plataforma web intuitiva para a visualização em tempo real e histórica dos dados de temperatura. Essa plataforma permitirá a geração de gráficos interativos e personalizáveis, facilitando a análise de tendências e a identificação de anomalias. Além disso, serão gerados relatórios detalhados com informações sobre a temperatura média, variações, alertas e previsões de manutenção. Um sistema de alerta notificará os usuários sobre variações de temperatura fora dos padrões predefinidos.
+
+É importante ressaltar que o escopo do projeto se limita ao monitoramento de temperatura, excluindo outros parâmetros ambientais, e não inclui a implementação de controle automático de temperatura ou um aplicativo móvel. Nosso foco é fornecer uma solução robusta e confiável para o monitoramento de temperatura, capacitando os usuários a otimizar seus processos e garantir a qualidade de seus produtos.
 
 ## 📋 Backlog
 
-📎 Arquivo: `Backlog_Projeto_Automacao_Adega_Completo.xlsx`
+📎 [Backlog_Projeto_Automacao_Adega.xlsx](https://sesisenaispedu-my.sharepoint.com/:x:/g/personal/caio_farias3_portalsesisp_org_br/ETBYr-OmUL9It-vZs6Ey2EsBDHYTHdADm5ynB5ZjV5BNPw?e=Qbme0G)
 
 ## 🗓️ Cronograma
 
-📎 Arquivo: `Cronograma_Projeto_Adega_Arduino.xlsx`
+📎 [Cronograma.xlsx](https://sesisenaispedu-my.sharepoint.com/:x:/g/personal/caio_farias3_portalsesisp_org_br/ETBYr-OmUL9It-vZs6Ey2EsBDHYTHdADm5ynB5ZjV5BNPw?e=Qbme0G)
 
+<!--
 ## 🧪 Materiais e Métodos
 
 - **Modelagem do Sistema**:
@@ -83,12 +81,15 @@ Desenvolver um sistema que:
 
 - MVP apresentado ao cliente em reunião de homologação.
 - Fotos e lista de presença disponíveis no documento original.
+-->
 
 ## 🌐 Divulgação
 
 - **LinkedIn do Projeto**: [Inserir Link]
-- **Repositório GitHub**: [Inserir Link]
+- **Repositório GitHub**: [[Inserir Link](https://github.com/unimetrocamp-startupclass/MonitoraDega)]
 - **Vídeo da Apresentação**: [Inserir Link]
+
+<!--
 
 ## 🎤 Seminário de Projetos de Software
 
