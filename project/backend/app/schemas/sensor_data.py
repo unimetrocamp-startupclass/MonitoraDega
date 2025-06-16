@@ -4,6 +4,7 @@ from datetime import datetime
 class SensorDataBase(BaseModel):
     temperature: float
     humidity: float
+    container_id: int 
 
 class SensorDataCreate(SensorDataBase):
     pass
@@ -13,4 +14,4 @@ class SensorData(SensorDataBase):
     created_at: datetime
 
     class Config:
-        from_attributes = True 
+        from_attributes = True

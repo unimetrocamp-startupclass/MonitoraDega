@@ -1,7 +1,6 @@
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 from .database import engine, Base
-from .models.sensor_data import SensorData
 from .routes import router as api_router
 import logging
 
@@ -33,7 +32,3 @@ app.add_middleware(
 app.include_router(api_router)
 
 create_tables()
-
-@app.get("/")
-def read_root():
-    return {"message": "Sistema de Monitoramento IoT"}

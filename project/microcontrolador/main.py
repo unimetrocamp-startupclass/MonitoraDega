@@ -39,7 +39,6 @@ def send_data(data):
     try:
         headers = {"Content-Type": "application/json"}
         print("Enviando para API...")
-        print("A...")
         response = urequests.post(API_URL, data=ujson.dumps(data), headers=headers)
         print(response)
         if response.status_code == 200:
@@ -58,6 +57,12 @@ def send_data(data):
         print("\nErro inesperado:", str(e))
         return False
 
+try:
+    container_id = int(input("Digite o ID do container para este dispositivo: "))
+except Exception:
+    print("ID de container inválido. Usando 1 como padrão.")
+    container_id = 1
+
 connect_wifi()
 
 last_data = None
@@ -71,16 +76,21 @@ while True:
     
     if sensor_data:
         print(f"Temperatura: {sensor_data['temperature']}°C, Umidade: {sensor_data['humidity']}%")
-        
-        if ujson.dumps(sensor_data) != last_data:
-            if not send_data(sensor_data):
+        # Inclui o container_id no payload
+        payload = {
+            "temperature": sensor_data["temperature"],
+            "humidity": sensor_data["humidity"],
+            "container_id": container_id
+        }
+        if ujson.dumps(payload) != last_data:
+            if not send_data(payload):
                 print("Falha ao enviar dados. Tentando novamente...")
                 time.sleep(2)
-                if not send_data(sensor_data):  
+                if not send_data(payload):  
                     print("Falha persistente. Verifique conexão e API.")
             else:
-                last_data = ujson.dumps(sensor_data)
+                last_data = ujson.dumps(payload)
         else:
             print("Dados inalterados. Não enviando.")
     
-    time.sleep(5) 
+    time.sleep(5)
